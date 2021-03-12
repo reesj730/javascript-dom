@@ -1,0 +1,37 @@
+
+body{
+	padding: 50px;
+	font-family: helvetica, arial, sans-serif;
+}
+
+h1{
+	font-style: italic;
+	color: #373fff;
+}
+
+button{
+	background: white;
+	border: 2px solid black;
+	padding: 10px 15px;
+	text-transform: uppercase;
+}
+
+.container{
+	border: 2px solid black;
+	padding: 10px;
+	margin-top: 20px;
+	min-height: 400px;
+}
+
+.tank_png {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fish {
+  position: absolute;
+  z-index: 1;
+  width: 10%;
+  height: 10%;
+  cursor: pointer;
+}
