@@ -2,7 +2,6 @@
 
 let button = document.querySelector('#duck');
 let wrap = document.querySelector('#wrap');
-let image = document.querySelector("#image");
 let score = document.querySelector("#score-counter");
 
 
@@ -14,13 +13,13 @@ let blueBtn = document.querySelector('#blue');
 
 button.addEventListener("click", () => {
   addDuck();
+  console.log('click');
 });
 
 const addDuck = () => {
   const img = document.createElement('img');
   img.src = 'https://bit.ly/2KQJVKc';
   img.id = "image";
-  img.alt = duck;
 
   img.style.left = Math.round(Math.random() * document.getElementById('wrap').clientWidth) + 'px';
   img.style.top = Math.round(Math.random() * document.getElementById('wrap').clientHeight) + 'px';
@@ -59,12 +58,12 @@ blueBtn.addEventListener("click", () => {
     document.body.style.backgroundColor = 'blue'; 
 });
 
-const totalCount = 7;
-window.onload = (event) => {
+
+let changeBackground = function() {
+  const totalCount = 9;
   let num = Math.ceil( Math.random() * totalCount );
-  document.getElementById('wrap').background = 'imgs/'+num+'.png';
-  document.getElementById('wrap').style.backgroundSize = "cover";
-};
+  document.getElementById('wrap').append('imgs/'+num+'.png');
+}
 
 
 
