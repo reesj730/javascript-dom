@@ -2,27 +2,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<meta chaset="utf-8">
 	<meta http-equi="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, intial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Javascript DOM Manipulation</title>
+  <link rel="shortcut icon" type="image/jpg" href="assets/imgs/duck_icon.ico"/>
 
-<!-- import style sheet -->
+	<!-- import style sheet -->
 	<link rel="stylesheet" href="assets/style.css">
-	
-</head>
-  <body>
-    <button id="add-item">Click me!</button>
-    <div class="container">
-		<img src="assets/imgs/tank.png" alt="fish tank" class="tank_png">
-    </div>
-    <div id="container2">
-        <img src="assets/imgs/fish.png" alt="fish" class="fish">
-    </div>
 
-    <!-- import javascript file -->
-	<script src="js/main.js" type="text/javascript" defer></script>
-  </body>
+  <!-- import font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container" id='wrap'>
+  <div id="image"></div>
+  <img id="red" src="assets/imgs/red.png" alt="red"/>
+  <img id="yellow" src="assets/imgs/yellow.png" alt="yellow"/>
+  <img id="purple" src="assets/imgs/purple.png" alt="purple"/>
+  <img id="blue" src="assets/imgs/blue.png" alt="blue"/>
+  <div class="scoreContainer">
+    <div id="score-text">Score</div>
+    <div id="score-counter">0</div>
+    <button id="duck" >Ducks!</button>
+    <button id="reset" onClick="window.location.reload();">Reset</button>
+  </div>
+</div>
+   
+<script src="js/main.js" type="text/javascript" defer></script>
+</body>
 </html>
